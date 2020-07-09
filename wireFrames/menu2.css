@@ -1,0 +1,59 @@
+/* Group 1 */
+
+position: absolute;
+width: 388px;
+height: 801px;
+left: -7px;
+top: 11px;
+
+filter: blur(4px);
+
+
+/* Rectangle 5 */
+
+position: absolute;
+width: 269px;
+height: 812px;
+left: 106px;
+top: 0px;
+
+background: #56CCF2;
+
+
+/* Component 1 */
+
+position: absolute;
+width: 269px;
+height: 50px;
+left: 106px;
+top: 89px;
+
+
+
+/* Component 2 */
+
+position: absolute;
+width: 269px;
+height: 50px;
+left: 106px;
+top: 142px;
+
+
+
+/* Component 3 */
+
+position: absolute;
+width: 269px;
+height: 50px;
+left: 106px;
+top: 195px;
+
+
+
+/* close-24px 1 */
+
+position: absolute;
+left: 88.8%;
+right: 2.67%;
+top: 0.74%;
+bottom: 95.32%;

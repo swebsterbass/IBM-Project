@@ -1,0 +1,78 @@
+/* Rectangle 1 */
+
+position: absolute;
+width: 375px;
+height: 648px;
+left: 0px;
+top: 144px;
+
+background: #56CCF2;
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 375px;
+height: 573px;
+left: 0px;
+top: 239px;
+
+background: #74DAFB;
+
+
+/* App Name */
+
+position: absolute;
+width: 375px;
+height: 46px;
+left: 0px;
+top: 162px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #56CCF2;
+
+
+
+/* policy-24px 1 */
+
+position: absolute;
+width: 114px;
+height: 110px;
+left: 128px;
+top: 34px;
+
+
+
+/* My button */
+
+position: absolute;
+width: 253px;
+height: 43px;
+left: 58px;
+top: 539px;
+
+
+
+/* My button */
+
+position: absolute;
+width: 253px;
+height: 43px;
+left: 58px;
+top: 602px;
+
+
+
+/* My button */
+
+position: absolute;
+width: 253px;
+height: 43px;
+left: 59px;
+top: 468px;
