@@ -1,0 +1,148 @@
+/* Rectangle 1 */
+
+position: absolute;
+width: 375px;
+height: 648px;
+left: 0px;
+top: 144px;
+
+background: #56CCF2;
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 375px;
+height: 573px;
+left: 0px;
+top: 239px;
+
+background: #74DAFB;
+
+
+/* Forgot Username or Password? */
+
+position: absolute;
+width: 190px;
+height: 15px;
+left: 89px;
+top: 630px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Security & Privacy */
+
+position: absolute;
+width: 106px;
+height: 15px;
+left: 131px;
+top: 764px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* App Name */
+
+position: absolute;
+width: 375px;
+height: 46px;
+left: 0px;
+top: 162px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #56CCF2;
+
+
+
+/* policy-24px 1 */
+
+position: absolute;
+width: 114px;
+height: 110px;
+left: 128px;
+top: 34px;
+
+
+
+/* My button */
+
+position: absolute;
+width: 253px;
+height: 43px;
+left: 58px;
+top: 468px;
+
+
+
+/* My button */
+
+position: absolute;
+width: 253px;
+height: 43px;
+left: 59px;
+top: 406px;
+
+
+
+/* My button */
+
+position: absolute;
+width: 307px;
+height: 52px;
+left: 31px;
+top: 552px;
+
+
+
+/* help_outline-24px 1 */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 19px;
+top: 15px;
+
+
+
+/* Help */
+
+position: absolute;
+width: 30px;
+height: 15px;
+left: 44px;
+top: 20px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-align: center;
+
+color: #56CCF2;

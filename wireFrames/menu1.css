@@ -1,0 +1,70 @@
+/* Blur 3 */
+
+position: absolute;
+width: 375px;
+height: 486px;
+left: 0px;
+top: 18px;
+
+filter: blur(4px);
+
+
+/* Rectangle 7 */
+
+position: absolute;
+width: 269px;
+height: 812px;
+left: 106px;
+top: 0px;
+
+background: #56CCF2;
+
+
+/* Vector */
+
+position: absolute;
+left: 89.33%;
+right: 5.69%;
+top: 1.97%;
+bottom: 95.73%;
+
+background: #FFFFFF;
+
+
+/* Component 10 */
+
+position: absolute;
+width: 269px;
+height: 50px;
+left: 106px;
+top: 59px;
+
+
+
+/* Component 11 */
+
+position: absolute;
+width: 269px;
+height: 50px;
+left: 106px;
+top: 114px;
+
+
+
+/* Component 12 */
+
+position: absolute;
+width: 269px;
+height: 50px;
+left: 106px;
+top: 169px;
+
+
+
+/* Component 13 */
+
+position: absolute;
+width: 269px;
+height: 50px;
+left: 106px;
+top: 224px;
