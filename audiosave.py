@@ -94,6 +94,7 @@ class RecordScreen(Screen):
         """
 
     def stop(self):
+        print(audio.file_path)
         audio.stop()
         """
         try:
@@ -105,6 +106,7 @@ class RecordScreen(Screen):
 
 
     def play(self):
+        #doesn't save?
         audio.play()
         """
         try:
@@ -114,11 +116,13 @@ class RecordScreen(Screen):
         """
     
     def listen(self):
-        stt.start()
-        assert stt.listening
-        print(stt.partial_results)
-        if "hello" in stt.partial_results:
-            print("YESSSIRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR")
+        #doesn't run long enough. Should run longer
+        for i in range(30):
+            stt.start()
+            assert stt.listening
+            print(stt.partial_results)
+            if "hello" in stt.partial_results:
+                print("YESSSIRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR")
 
             """
             try:
