@@ -3,10 +3,12 @@ import kivy
 kivy.require ("1.11.1")
 from kivy.app import App
 from kivy.uix.button import Button
-from plyer import audio
-from plyer import stt
+from plyer import audio , sms , stt
 from kivy.uix.screenmanager import ScreenManager, Screen
 import os
+import requests
+import pyrebase
+import datetime 
 from kivy.lang import Builder
 print(audio.file_path)
 
@@ -78,11 +80,28 @@ Builder.load_string("""
             size_hint: 0.15, 0.15
             on_press:
                 root.see_results()
-
-
+    
 """)
 
 class RecordScreen(Screen):
+    config={
+    "apiKey": "AIzaSyDx0hjp8989leo1W92nsUWpYcQ3-uokZoI",
+    "authDomain": "ibmaudiolinks.firebaseapp.com",
+    "databaseURL": "https://ibmaudiolinks.firebaseio.com",
+    "projectId": "ibmaudiolinks",
+    "storageBucket": "ibmaudiolinks.appspot.com",
+    "messagingSenderId": "376132239870",
+    "appId": "1:376132239870:web:a31dc3654cc7434ae3c0af",
+    "measurementId": "G-TJL6616894"
+    }
+    
+    
+    firebase=pyrebase.initialize_app(config)
+    storage=firebase.storage()
+    
+    
+
+
 
     def start(self):
         audio.start()
@@ -94,8 +113,15 @@ class RecordScreen(Screen):
         """
 
     def stop(self):
-        print(audio.file_path)
+        print(audio.file_path) 
         audio.stop()
+        times= str(datetime.datetime.now())
+        audiofile="audiofile"+times
+        path_on_cloud= "7day"+"/"+audiofile
+        self.storage.child(self.path_on_cloud).put(str(audio.file_path))
+        message=self.storage.child(self.path_on_cloud).get_url(None)
+        sms.send(recipient=4433621861, message=message)
+        print('good')
         """
         try:
             print(audio.file_path)
@@ -115,16 +141,15 @@ class RecordScreen(Screen):
             print("Not implemented")
         """
     
+    """
     def listen(self):
         #doesn't run long enough. Should run longer
-        for i in range(30):
-            stt.start()
-            assert stt.listening
-            print(stt.partial_results)
-            if "hello" in stt.partial_results:
-                print("YESSSIRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR")
+        stt.start()
+        assert stt.listening
+        print(stt.partial_results)
+        if "hello" in stt.partial_results:
+            print("YESSSIRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR")
 
-            """
             try:
                 stt.start()
                 assert stt.listening
@@ -133,30 +158,25 @@ class RecordScreen(Screen):
                     print("YESSSIRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR")
             except:
                 print("Not implemented")
-            """
 
     def end_listen(self):
         stt.stop()
-        """
         try:
             stt.stop()
         except:
             print("Not implemented")
-        """
 
     def see_results(self):
         print(stt.results)
         if "police" in stt.results:
                 print("YESSSIRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR: BUT FOR POLICE")
-        """
         try:
             print(stt.results)
             if "police" in stt.results:
                 print("YESSSIRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR: BUT FOR POLICE")
         except:
             print("Not implemented")
-        """
-        
+    """    
 
 sm=ScreenManager()
 sm.add_widget(RecordScreen(name='record'))
