@@ -235,7 +235,8 @@ def searchFirestore(db, city, state):
 #         print(f'{doc.id} => {doc.to_dict()}')
 
     
-if __name__ == "__main__":
+# if __name__ == "__main__":
+def beginning():
     # search("hello", "title")
     
     # Use the application default credentials
